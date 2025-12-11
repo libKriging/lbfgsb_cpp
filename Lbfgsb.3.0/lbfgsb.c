@@ -87,7 +87,7 @@ static doublereal c_b282 = .1;
     integer s_cmp(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */
-    static integer ld, lr, lt, lz, lwa, lwn, lss, lxp, lws, lwt, lsy, lwy, 
+    integer ld, lr, lt, lz, lwa, lwn, lss, lxp, lws, lwt, lsy, lwy, 
 	    lsnd;
     extern /* Subroutine */ int mainlb_(integer *, integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *,
@@ -395,42 +395,42 @@ static doublereal c_b282 = .1;
 	    ftnlen), e_wsfe(void);
 
     /* Local variables */
-    static integer i__, k;
-    static doublereal gd, dr, rr, dtd;
-    static integer col;
-    static doublereal tol;
-    static logical wrk;
-    static doublereal stp, cpu1, cpu2;
-    static integer head;
-    static doublereal fold;
-    static integer nact;
-    static doublereal ddum;
+    integer i__, k;
+    doublereal gd, dr, rr, dtd;
+    integer col;
+    doublereal tol;
+    logical wrk;
+    doublereal stp, cpu1, cpu2;
+    integer head;
+    doublereal fold;
+    integer nact;
+    doublereal ddum;
     extern doublereal ddot_(integer *, doublereal *, integer *, doublereal *, 
 	    integer *);
-    static integer info, nseg;
-    static doublereal time;
-    static integer nfgv, ifun, iter;
-    static char word[3];
-    static doublereal time1, time2;
-    static integer iback;
+    integer info, nseg;
+    doublereal time;
+    integer nfgv, ifun, iter;
+    char word[3];
+    doublereal time1, time2;
+    integer iback;
     extern /* Subroutine */ int dscal_(integer *, doublereal *, doublereal *, 
 	    integer *);
-    static doublereal gdold;
-    static integer nfree;
-    static logical boxed;
-    static integer itail;
-    static doublereal theta;
+    doublereal gdold;
+    integer nfree;
+    logical boxed;
+    integer itail;
+    doublereal theta;
     extern /* Subroutine */ int freev_(integer *, integer *, integer *, 
 	    integer *, integer *, integer *, integer *, logical *, logical *, 
 	    logical *, integer *, integer *), dcopy_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *);
-    static doublereal dnorm;
+    doublereal dnorm;
     extern /* Subroutine */ int timer_(doublereal *), formk_(integer *, 
 	    integer *, integer *, integer *, integer *, integer *, integer *, 
 	    logical *, doublereal *, doublereal *, integer *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, integer *, integer *, 
 	    integer *);
-    static integer nskip, iword;
+    integer nskip, iword;
     extern /* Subroutine */ int formt_(integer *, doublereal *, doublereal *, 
 	    doublereal *, integer *, doublereal *, integer *), subsm_(integer 
 	    *, integer *, integer *, integer *, doublereal *, doublereal *, 
@@ -438,7 +438,7 @@ static doublereal c_b282 = .1;
 	     doublereal *, doublereal *, doublereal *, doublereal *, integer *
 	    , integer *, integer *, doublereal *, doublereal *, integer *, 
 	    integer *);
-    static doublereal xstep, stpmx;
+    doublereal xstep, stpmx;
     extern /* Subroutine */ int prn1lb_(integer *, integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *, integer *, doublereal *), 
 	    prn2lb_(integer *, doublereal *, doublereal *, doublereal *, 
@@ -450,12 +450,12 @@ static doublereal c_b282 = .1;
 	    doublereal *, integer *, char *, integer *, doublereal *, 
 	    doublereal *, integer *, doublereal *, doublereal *, doublereal *,
 	     ftnlen, ftnlen);
-    static integer ileave;
+    integer ileave;
     extern /* Subroutine */ int errclb_(integer *, integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *, char *, integer *, integer 
 	    *, ftnlen);
-    static doublereal cachyt;
-    static integer itfile;
+    doublereal cachyt;
+    integer itfile;
     extern /* Subroutine */ int active_(integer *, doublereal *, doublereal *,
 	     integer *, doublereal *, integer *, integer *, logical *, 
 	    logical *, logical *), cauchy_(integer *, doublereal *, 
@@ -465,25 +465,25 @@ static doublereal c_b282 = .1;
 	    doublereal *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 
 	    integer *, doublereal *);
-    static doublereal epsmch;
+    doublereal epsmch;
     extern /* Subroutine */ int cmprlb_(integer *, integer *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, integer *,
 	     doublereal *, integer *, integer *, integer *, logical *, 
 	    integer *);
-    static logical updatd;
-    static doublereal sbtime;
-    static logical prjctd;
-    static integer iupdat;
-    static doublereal sbgnrm;
-    static logical cnstnd;
+    logical updatd;
+    doublereal sbtime;
+    logical prjctd;
+    integer iupdat;
+    doublereal sbgnrm;
+    logical cnstnd;
     extern /* Subroutine */ int matupd_(integer *, integer *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, integer *, integer *, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *);
-    static integer nenter;
-    static doublereal lnscht;
+    integer nenter;
+    doublereal lnscht;
     extern /* Subroutine */ int lnsrlb_(integer *, doublereal *, doublereal *,
 	     integer *, doublereal *, doublereal *, doublereal *, doublereal *
 	    , doublereal *, doublereal *, doublereal *, doublereal *, 
@@ -491,20 +491,20 @@ static doublereal c_b282 = .1;
 	    doublereal *, doublereal *, doublereal *, integer *, integer *, 
 	    integer *, integer *, integer *, char *, logical *, logical *, 
 	    char *, integer *, doublereal *, ftnlen, ftnlen);
-    static integer nintol;
+    integer nintol;
     extern /* Subroutine */ int projgr_(integer *, doublereal *, doublereal *,
 	     integer *, doublereal *, doublereal *, doublereal *);
 
     /* Fortran I/O blocks */
-    static cilist io___56 = { 0, 6, 0, fmt_1002, 0 };
-    static cilist io___57 = { 0, 0, 0, fmt_1003, 0 };
-    static cilist io___58 = { 0, 6, 0, fmt_1001, 0 };
-    static cilist io___60 = { 0, 6, 0, fmt_1005, 0 };
-    static cilist io___62 = { 0, 6, 0, fmt_1006, 0 };
-    static cilist io___63 = { 0, 6, 0, fmt_1005, 0 };
-    static cilist io___65 = { 0, 6, 0, fmt_1008, 0 };
-    static cilist io___69 = { 0, 6, 0, fmt_1004, 0 };
-    static cilist io___70 = { 0, 6, 0, fmt_1007, 0 };
+    cilist io___56 = { 0, 6, 0, fmt_1002, 0 };
+    cilist io___57 = { 0, 0, 0, fmt_1003, 0 };
+    cilist io___58 = { 0, 6, 0, fmt_1001, 0 };
+    cilist io___60 = { 0, 6, 0, fmt_1005, 0 };
+    cilist io___62 = { 0, 6, 0, fmt_1006, 0 };
+    cilist io___63 = { 0, 6, 0, fmt_1005, 0 };
+    cilist io___65 = { 0, 6, 0, fmt_1008, 0 };
+    cilist io___69 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___70 = { 0, 6, 0, fmt_1007, 0 };
 
 
 /* -jlm-jn */
@@ -1244,7 +1244,7 @@ L1000:
 	logical *prjctd, logical *cnstnd, logical *boxed)
 {
     /* Format strings */
-    static char fmt_1001[] = "(/,\002At X0 \002,i9,\002 variables are exactl"
+    char fmt_1001[] = "(/,\002At X0 \002,i9,\002 variables are exactl"
 	    "y at the bounds\002)";
 
     /* System generated locals */
@@ -1256,12 +1256,12 @@ L1000:
 	     e_wsfe(void);
 
     /* Local variables */
-    static integer i__, nbdd;
+    integer i__, nbdd;
 
     /* Fortran I/O blocks */
-    static cilist io___75 = { 0, 6, 0, 0, 0 };
-    static cilist io___76 = { 0, 6, 0, 0, 0 };
-    static cilist io___77 = { 0, 6, 0, fmt_1001, 0 };
+    cilist io___75 = { 0, 6, 0, 0, 0 };
+    cilist io___76 = { 0, 6, 0, 0, 0 };
+    cilist io___77 = { 0, 6, 0, fmt_1001, 0 };
 
 
 /*     ************ */
@@ -1379,8 +1379,8 @@ L1000:
     double sqrt(doublereal);
 
     /* Local variables */
-    static integer i__, k, i2;
-    static doublereal sum;
+    integer i__, k, i2;
+    doublereal sum;
     extern /* Subroutine */ int dtrsl_(doublereal *, integer *, integer *, 
 	    doublereal *, integer *, integer *);
 
@@ -1522,18 +1522,18 @@ L1000:
 	epsmch)
 {
     /* Format strings */
-    static char fmt_3010[] = "(/,\002---------------- CAUCHY entered--------"
+    char fmt_3010[] = "(/,\002---------------- CAUCHY entered--------"
 	    "-----------\002)";
-    static char fmt_1010[] = "(\002Cauchy X =  \002,/,(4x,1p,6(1x,d11.4)))";
-    static char fmt_4011[] = "(/,\002Piece    \002,i3,\002 --f1, f2 at start"
+    char fmt_1010[] = "(\002Cauchy X =  \002,/,(4x,1p,6(1x,d11.4)))";
+    char fmt_4011[] = "(/,\002Piece    \002,i3,\002 --f1, f2 at start"
 	    " point \002,1p,2(1x,d11.4))";
-    static char fmt_5010[] = "(\002Distance to the next break point =  \002,"
+    char fmt_5010[] = "(\002Distance to the next break point =  \002,"
 	    "1p,d11.4)";
-    static char fmt_6010[] = "(\002Distance to the stationary point =  \002,"
+    char fmt_6010[] = "(\002Distance to the stationary point =  \002,"
 	    "1p,d11.4)";
-    static char fmt_4010[] = "(\002Piece    \002,i3,\002 --f1, f2 at start p"
+    char fmt_4010[] = "(\002Piece    \002,i3,\002 --f1, f2 at start p"
 	    "oint \002,1p,2(1x,d11.4))";
-    static char fmt_2010[] = "(/,\002---------------- exit CAUCHY-----------"
+    char fmt_2010[] = "(/,\002---------------- exit CAUCHY-----------"
 	    "-----------\002,/)";
 
     /* System generated locals */
@@ -1547,51 +1547,51 @@ L1000:
 	    char *, ftnlen);
 
     /* Local variables */
-    static integer i__, j;
-    static doublereal f1, f2, dt, tj, tl, tu, tj0;
-    static integer ibp;
-    static doublereal dtm;
+    integer i__, j;
+    doublereal f1, f2, dt, tj, tl, tu, tj0;
+    integer ibp;
+    doublereal dtm;
     extern /* Subroutine */ int bmv_(integer *, doublereal *, doublereal *, 
 	    integer *, doublereal *, doublereal *, integer *);
-    static doublereal wmc, wmp, wmw;
-    static integer col2;
-    static doublereal dibp;
+    doublereal wmc, wmp, wmw;
+    integer col2;
+    doublereal dibp;
     extern doublereal ddot_(integer *, doublereal *, integer *, doublereal *, 
 	    integer *);
-    static integer iter;
-    static doublereal zibp, tsum, dibp2;
-    static logical bnded;
+    integer iter;
+    doublereal zibp, tsum, dibp2;
+    logical bnded;
     extern /* Subroutine */ int dscal_(integer *, doublereal *, doublereal *, 
 	    integer *);
-    static doublereal neggi;
-    static integer nfree;
-    static doublereal bkmin;
-    static integer nleft;
+    doublereal neggi;
+    integer nfree;
+    doublereal bkmin;
+    integer nleft;
     extern /* Subroutine */ int dcopy_(integer *, doublereal *, integer *, 
 	    doublereal *, integer *), daxpy_(integer *, doublereal *, 
 	    doublereal *, integer *, doublereal *, integer *);
-    static doublereal f2_org__;
-    static integer nbreak, ibkmin;
+    doublereal f2_org__;
+    integer nbreak, ibkmin;
     extern /* Subroutine */ int hpsolb_(integer *, doublereal *, integer *, 
 	    integer *);
-    static integer pointr;
-    static logical xlower, xupper;
+    integer pointr;
+    logical xlower, xupper;
 
     /* Fortran I/O blocks */
-    static cilist io___82 = { 0, 6, 0, 0, 0 };
-    static cilist io___90 = { 0, 6, 0, fmt_3010, 0 };
-    static cilist io___99 = { 0, 6, 0, fmt_1010, 0 };
-    static cilist io___104 = { 0, 6, 0, 0, 0 };
-    static cilist io___111 = { 0, 6, 0, fmt_4011, 0 };
-    static cilist io___112 = { 0, 6, 0, fmt_5010, 0 };
-    static cilist io___113 = { 0, 6, 0, fmt_6010, 0 };
-    static cilist io___116 = { 0, 6, 0, 0, 0 };
-    static cilist io___121 = { 0, 6, 0, 0, 0 };
-    static cilist io___122 = { 0, 6, 0, 0, 0 };
-    static cilist io___123 = { 0, 6, 0, fmt_4010, 0 };
-    static cilist io___124 = { 0, 6, 0, fmt_6010, 0 };
-    static cilist io___125 = { 0, 6, 0, fmt_1010, 0 };
-    static cilist io___126 = { 0, 6, 0, fmt_2010, 0 };
+    cilist io___82 = { 0, 6, 0, 0, 0 };
+    cilist io___90 = { 0, 6, 0, fmt_3010, 0 };
+    cilist io___99 = { 0, 6, 0, fmt_1010, 0 };
+    cilist io___104 = { 0, 6, 0, 0, 0 };
+    cilist io___111 = { 0, 6, 0, fmt_4011, 0 };
+    cilist io___112 = { 0, 6, 0, fmt_5010, 0 };
+    cilist io___113 = { 0, 6, 0, fmt_6010, 0 };
+    cilist io___116 = { 0, 6, 0, 0, 0 };
+    cilist io___121 = { 0, 6, 0, 0, 0 };
+    cilist io___122 = { 0, 6, 0, 0, 0 };
+    cilist io___123 = { 0, 6, 0, fmt_4010, 0 };
+    cilist io___124 = { 0, 6, 0, fmt_6010, 0 };
+    cilist io___125 = { 0, 6, 0, fmt_1010, 0 };
+    cilist io___126 = { 0, 6, 0, fmt_2010, 0 };
 
 
 /*     ************ */
@@ -2158,11 +2158,11 @@ L999:
 	    wt_dim1, wt_offset, i__1, i__2;
 
     /* Local variables */
-    static integer i__, j, k;
-    static doublereal a1, a2;
+    integer i__, j, k;
+    doublereal a1, a2;
     extern /* Subroutine */ int bmv_(integer *, doublereal *, doublereal *, 
 	    integer *, doublereal *, doublereal *, integer *);
-    static integer pointr;
+    integer pointr;
 
 /*     ************ */
 
@@ -2258,7 +2258,7 @@ L999:
     /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */
-    static integer i__;
+    integer i__;
 
 /*     ************ */
 
@@ -2329,16 +2329,16 @@ L999:
 	    wy_dim1, wy_offset, sy_dim1, sy_offset, i__1, i__2, i__3;
 
     /* Local variables */
-    static integer i__, k, k1, m2, is, js, iy, jy, is1, js1, col2, dend, pend;
+    integer i__, k, k1, m2, is, js, iy, jy, is1, js1, col2, dend, pend;
     extern doublereal ddot_(integer *, doublereal *, integer *, doublereal *, 
 	    integer *);
-    static integer upcl;
-    static doublereal temp1, temp2, temp3, temp4;
+    integer upcl;
+    doublereal temp1, temp2, temp3, temp4;
     extern /* Subroutine */ int dpofa_(doublereal *, integer *, integer *, 
 	    integer *), dcopy_(integer *, doublereal *, integer *, doublereal 
 	    *, integer *), dtrsl_(doublereal *, integer *, integer *, 
 	    doublereal *, integer *, integer *);
-    static integer ipntr, jpntr, dbegin, pbegin;
+    integer ipntr, jpntr, dbegin, pbegin;
 
 /*     ************ */
 
@@ -2714,8 +2714,8 @@ L999:
 	    i__2, i__3;
 
     /* Local variables */
-    static integer i__, j, k, k1;
-    static doublereal ddum;
+    integer i__, j, k, k1;
+    doublereal ddum;
     extern /* Subroutine */ int dpofa_(doublereal *, integer *, integer *, 
 	    integer *);
 
@@ -2803,13 +2803,13 @@ L999:
 	    e_wsle(void);
 
     /* Local variables */
-    static integer i__, k, iact;
+    integer i__, k, iact;
 
     /* Fortran I/O blocks */
-    static cilist io___163 = { 0, 6, 0, 0, 0 };
-    static cilist io___164 = { 0, 6, 0, 0, 0 };
-    static cilist io___165 = { 0, 6, 0, 0, 0 };
-    static cilist io___167 = { 0, 6, 0, 0, 0 };
+    cilist io___163 = { 0, 6, 0, 0, 0 };
+    cilist io___164 = { 0, 6, 0, 0, 0 };
+    cilist io___165 = { 0, 6, 0, 0, 0 };
+    cilist io___167 = { 0, 6, 0, 0, 0 };
 
 
 /*     ************ */
@@ -2947,9 +2947,9 @@ L999:
     integer i__1;
 
     /* Local variables */
-    static integer i__, j, k;
-    static doublereal out, ddum;
-    static integer indxin, indxou;
+    integer i__, j, k;
+    doublereal out, ddum;
+    integer indxin, indxou;
 
 /*     ************ */
 
@@ -3075,8 +3075,8 @@ L30:
 	    e_wsle(void);
 
     /* Local variables */
-    static integer i__;
-    static doublereal a1, a2;
+    integer i__;
+    doublereal a1, a2;
     extern doublereal ddot_(integer *, doublereal *, integer *, doublereal *, 
 	    integer *);
     extern /* Subroutine */ int dcopy_(integer *, doublereal *, integer *, 
@@ -3086,7 +3086,7 @@ L30:
 	    ftnlen);
 
     /* Fortran I/O blocks */
-    static cilist io___178 = { 0, 6, 0, 0, 0 };
+    cilist io___178 = { 0, 6, 0, 0, 0 };
 
 
 /*     ********** */
@@ -3231,12 +3231,12 @@ L556:
 	    ss_dim1, ss_offset, i__1, i__2;
 
     /* Local variables */
-    static integer j;
+    integer j;
     extern doublereal ddot_(integer *, doublereal *, integer *, doublereal *, 
 	    integer *);
     extern /* Subroutine */ int dcopy_(integer *, doublereal *, integer *, 
 	    doublereal *, integer *);
-    static integer pointr;
+    integer pointr;
 
 /*     ************ */
 
@@ -3333,9 +3333,9 @@ L556:
 	doublereal *epsmch)
 {
     /* Format strings */
-    static char fmt_7001[] = "(\002RUNNING THE L-BFGS-B CODE\002,/,/,\002   "
+    char fmt_7001[] = "(\002RUNNING THE L-BFGS-B CODE\002,/,/,\002   "
 	    "        * * *\002,/,/,\002Machine precision =\002,1p,d10.3)";
-    static char fmt_2001[] = "(\002RUNNING THE L-BFGS-B CODE\002,/,/,\002it "
+    char fmt_2001[] = "(\002RUNNING THE L-BFGS-B CODE\002,/,/,\002it "
 	    "   = iteration number\002,/,\002nf    = number of function evalu"
 	    "ations\002,/,\002nseg  = number of segments explored during the "
 	    "Cauchy search\002,/,\002nact  = number of active bounds at the g"
@@ -3347,10 +3347,10 @@ L556:
 	    "/,\002projg = norm of the projected gradient\002,/,\002f     = f"
 	    "unction value\002,/,/,\002           * * *\002,/,/,\002Machine p"
 	    "recision =\002,1p,d10.3)";
-    static char fmt_9001[] = "(/,3x,\002it\002,3x,\002nf\002,2x,\002nseg\002"
+    char fmt_9001[] = "(/,3x,\002it\002,3x,\002nf\002,2x,\002nseg\002"
 	    ",2x,\002nact\002,2x,\002sub\002,2x,\002itls\002,2x,\002stepl\002"
 	    ",4x,\002tstep\002,5x,\002projg\002,8x,\002f\002)";
-    static char fmt_1004[] = "(/,a4,1p,6(1x,d11.4),/,(4x,1p,6(1x,d11.4)))";
+    char fmt_1004[] = "(/,a4,1p,6(1x,d11.4),/,(4x,1p,6(1x,d11.4)))";
 
     /* System generated locals */
     integer i__1;
@@ -3361,17 +3361,17 @@ L556:
 	    e_wsle(void);
 
     /* Local variables */
-    static integer i__;
+    integer i__;
 
     /* Fortran I/O blocks */
-    static cilist io___181 = { 0, 6, 0, fmt_7001, 0 };
-    static cilist io___182 = { 0, 6, 0, 0, 0 };
-    static cilist io___183 = { 0, 0, 0, fmt_2001, 0 };
-    static cilist io___184 = { 0, 0, 0, 0, 0 };
-    static cilist io___185 = { 0, 0, 0, fmt_9001, 0 };
-    static cilist io___186 = { 0, 6, 0, fmt_1004, 0 };
-    static cilist io___188 = { 0, 6, 0, fmt_1004, 0 };
-    static cilist io___189 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___181 = { 0, 6, 0, fmt_7001, 0 };
+    cilist io___182 = { 0, 6, 0, 0, 0 };
+    cilist io___183 = { 0, 0, 0, fmt_2001, 0 };
+    cilist io___184 = { 0, 0, 0, 0, 0 };
+    cilist io___185 = { 0, 0, 0, fmt_9001, 0 };
+    cilist io___186 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___188 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___189 = { 0, 6, 0, fmt_1004, 0 };
 
 
 /*     ************ */
@@ -3466,10 +3466,10 @@ L556:
 	xstep, ftnlen word_len)
 {
     /* Format strings */
-    static char fmt_2001[] = "(/,\002At iterate\002,i5,4x,\002f= \002,1p,d12"
+    char fmt_2001[] = "(/,\002At iterate\002,i5,4x,\002f= \002,1p,d12"
 	    ".5,4x,\002|proj g|= \002,1p,d12.5)";
-    static char fmt_1004[] = "(/,a4,1p,6(1x,d11.4),/,(4x,1p,6(1x,d11.4)))";
-    static char fmt_3001[] = "(2(1x,i4),2(1x,i5),2x,a3,1x,i4,1p,2(2x,d7.1),1"
+    char fmt_1004[] = "(/,a4,1p,6(1x,d11.4),/,(4x,1p,6(1x,d11.4)))";
+    char fmt_3001[] = "(2(1x,i4),2(1x,i5),2x,a3,1x,i4,1p,2(2x,d7.1),1"
 	    "p,2(1x,d10.3))";
 
     /* System generated locals */
@@ -3482,15 +3482,15 @@ L556:
 	     e_wsfe(void);
 
     /* Local variables */
-    static integer i__, imod;
+    integer i__, imod;
 
     /* Fortran I/O blocks */
-    static cilist io___190 = { 0, 6, 0, 0, 0 };
-    static cilist io___191 = { 0, 6, 0, fmt_2001, 0 };
-    static cilist io___192 = { 0, 6, 0, fmt_1004, 0 };
-    static cilist io___194 = { 0, 6, 0, fmt_1004, 0 };
-    static cilist io___196 = { 0, 6, 0, fmt_2001, 0 };
-    static cilist io___197 = { 0, 0, 0, fmt_3001, 0 };
+    cilist io___190 = { 0, 6, 0, 0, 0 };
+    cilist io___191 = { 0, 6, 0, fmt_2001, 0 };
+    cilist io___192 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___194 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___196 = { 0, 6, 0, fmt_2001, 0 };
+    cilist io___197 = { 0, 0, 0, fmt_3001, 0 };
 
 
 /*     ************ */
@@ -3604,7 +3604,7 @@ L556:
 	task_len, ftnlen word_len)
 {
     /* Format strings */
-    static char fmt_3003[] = "(/,\002           * * *\002,/,/,\002Tit   = to"
+    char fmt_3003[] = "(/,\002           * * *\002,/,/,\002Tit   = to"
 	    "tal number of iterations\002,/,\002Tnf   = total number of funct"
 	    "ion evaluations\002,/,\002Tnint = total number of segments explo"
 	    "red during\002,\002 Cauchy searches\002,/,\002Skip  = number of "
@@ -3612,42 +3612,42 @@ L556:
 	    "t final generalized\002,\002 Cauchy point\002,/,\002Projg = norm"
 	    " of the final projected gradient\002,/,\002F     = final functio"
 	    "n value\002,/,/,\002           * * *\002)";
-    static char fmt_3004[] = "(/,3x,\002N\002,4x,\002Tit\002,5x,\002Tnf\002,"
+    char fmt_3004[] = "(/,3x,\002N\002,4x,\002Tit\002,5x,\002Tnf\002,"
 	    "2x,\002Tnint\002,2x,\002Skip\002,2x,\002Nact\002,5x,\002Projg"
 	    "\002,8x,\002F\002)";
-    static char fmt_3005[] = "(i5,2(1x,i6),(1x,i6),(2x,i4),(1x,i5),1p,2(2x,d"
+    char fmt_3005[] = "(i5,2(1x,i6),(1x,i6),(2x,i4),(1x,i5),1p,2(2x,d"
 	    "10.3))";
-    static char fmt_1004[] = "(/,a4,1p,6(1x,d11.4),/,(4x,1p,6(1x,d11.4)))";
-    static char fmt_3009[] = "(/,a60)";
-    static char fmt_9011[] = "(/,\002 Matrix in 1st Cholesky factorization i"
+    char fmt_1004[] = "(/,a4,1p,6(1x,d11.4),/,(4x,1p,6(1x,d11.4)))";
+    char fmt_3009[] = "(/,a60)";
+    char fmt_9011[] = "(/,\002 Matrix in 1st Cholesky factorization i"
 	    "n formk is not Pos. Def.\002)";
-    static char fmt_9012[] = "(/,\002 Matrix in 2st Cholesky factorization i"
+    char fmt_9012[] = "(/,\002 Matrix in 2st Cholesky factorization i"
 	    "n formk is not Pos. Def.\002)";
-    static char fmt_9013[] = "(/,\002 Matrix in the Cholesky factorization i"
+    char fmt_9013[] = "(/,\002 Matrix in the Cholesky factorization i"
 	    "n formt is not Pos. Def.\002)";
-    static char fmt_9014[] = "(/,\002 Derivative >= 0, backtracking line sea"
+    char fmt_9014[] = "(/,\002 Derivative >= 0, backtracking line sea"
 	    "rch impossible.\002,/,\002   Previous x, f and g restored.\002,/,"
 	    "\002 Possible causes: 1 error in function or gradient evaluation;"
 	    "\002,/,\002                  2 rounding errors dominate computat"
 	    "ion.\002)";
-    static char fmt_9015[] = "(/,\002 Warning:  more than 10 function and gr"
+    char fmt_9015[] = "(/,\002 Warning:  more than 10 function and gr"
 	    "adient\002,/,\002   evaluations in the last line search.  Termin"
 	    "ation\002,/,\002   may possibly be caused by a bad search direct"
 	    "ion.\002)";
-    static char fmt_9018[] = "(/,\002 The triangular system is singular.\002)"
+    char fmt_9018[] = "(/,\002 The triangular system is singular.\002)"
 	    ;
-    static char fmt_9019[] = "(/,\002 Line search cannot locate an adequate "
+    char fmt_9019[] = "(/,\002 Line search cannot locate an adequate "
 	    "point after 20 function\002,/,\002  and gradient evaluations.  P"
 	    "revious x, f and g restored.\002,/,\002 Possible causes: 1 error"
 	    " in function or gradient evaluation;\002,/,\002                 "
 	    " 2 rounding error dominate computation.\002)";
-    static char fmt_3007[] = "(/,\002 Cauchy                time\002,1p,e10."
+    char fmt_3007[] = "(/,\002 Cauchy                time\002,1p,e10."
 	    "3,\002 seconds.\002,/\002 Subspace minimization time\002,1p,e10."
 	    "3,\002 seconds.\002,/\002 Line search           time\002,1p,e10."
 	    "3,\002 seconds.\002)";
-    static char fmt_3008[] = "(/,\002 Total User time\002,1p,e10.3,\002 seco"
+    char fmt_3008[] = "(/,\002 Total User time\002,1p,e10.3,\002 seco"
 	    "nds.\002,/)";
-    static char fmt_3002[] = "(2(1x,i4),2(1x,i5),2x,a3,1x,i4,1p,2(2x,d7.1),6"
+    char fmt_3002[] = "(2(1x,i4),2(1x,i5),2x,a3,1x,i4,1p,2(2x,d7.1),6"
 	    "x,\002-\002,10x,\002-\002)";
 
     /* System generated locals */
@@ -3659,36 +3659,36 @@ L556:
 	    do_lio(integer *, integer *, char *, ftnlen), e_wsle(void);
 
     /* Local variables */
-    static integer i__;
+    integer i__;
 
     /* Fortran I/O blocks */
-    static cilist io___198 = { 0, 6, 0, fmt_3003, 0 };
-    static cilist io___199 = { 0, 6, 0, fmt_3004, 0 };
-    static cilist io___200 = { 0, 6, 0, fmt_3005, 0 };
-    static cilist io___201 = { 0, 6, 0, fmt_1004, 0 };
-    static cilist io___203 = { 0, 6, 0, 0, 0 };
-    static cilist io___204 = { 0, 6, 0, fmt_3009, 0 };
-    static cilist io___205 = { 0, 6, 0, fmt_9011, 0 };
-    static cilist io___206 = { 0, 6, 0, fmt_9012, 0 };
-    static cilist io___207 = { 0, 6, 0, fmt_9013, 0 };
-    static cilist io___208 = { 0, 6, 0, fmt_9014, 0 };
-    static cilist io___209 = { 0, 6, 0, fmt_9015, 0 };
-    static cilist io___210 = { 0, 6, 0, 0, 0 };
-    static cilist io___211 = { 0, 6, 0, 0, 0 };
-    static cilist io___212 = { 0, 6, 0, fmt_9018, 0 };
-    static cilist io___213 = { 0, 6, 0, fmt_9019, 0 };
-    static cilist io___214 = { 0, 6, 0, fmt_3007, 0 };
-    static cilist io___215 = { 0, 6, 0, fmt_3008, 0 };
-    static cilist io___216 = { 0, 0, 0, fmt_3002, 0 };
-    static cilist io___217 = { 0, 0, 0, fmt_3009, 0 };
-    static cilist io___218 = { 0, 0, 0, fmt_9011, 0 };
-    static cilist io___219 = { 0, 0, 0, fmt_9012, 0 };
-    static cilist io___220 = { 0, 0, 0, fmt_9013, 0 };
-    static cilist io___221 = { 0, 0, 0, fmt_9014, 0 };
-    static cilist io___222 = { 0, 0, 0, fmt_9015, 0 };
-    static cilist io___223 = { 0, 0, 0, fmt_9018, 0 };
-    static cilist io___224 = { 0, 0, 0, fmt_9019, 0 };
-    static cilist io___225 = { 0, 0, 0, fmt_3008, 0 };
+    cilist io___198 = { 0, 6, 0, fmt_3003, 0 };
+    cilist io___199 = { 0, 6, 0, fmt_3004, 0 };
+    cilist io___200 = { 0, 6, 0, fmt_3005, 0 };
+    cilist io___201 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___203 = { 0, 6, 0, 0, 0 };
+    cilist io___204 = { 0, 6, 0, fmt_3009, 0 };
+    cilist io___205 = { 0, 6, 0, fmt_9011, 0 };
+    cilist io___206 = { 0, 6, 0, fmt_9012, 0 };
+    cilist io___207 = { 0, 6, 0, fmt_9013, 0 };
+    cilist io___208 = { 0, 6, 0, fmt_9014, 0 };
+    cilist io___209 = { 0, 6, 0, fmt_9015, 0 };
+    cilist io___210 = { 0, 6, 0, 0, 0 };
+    cilist io___211 = { 0, 6, 0, 0, 0 };
+    cilist io___212 = { 0, 6, 0, fmt_9018, 0 };
+    cilist io___213 = { 0, 6, 0, fmt_9019, 0 };
+    cilist io___214 = { 0, 6, 0, fmt_3007, 0 };
+    cilist io___215 = { 0, 6, 0, fmt_3008, 0 };
+    cilist io___216 = { 0, 0, 0, fmt_3002, 0 };
+    cilist io___217 = { 0, 0, 0, fmt_3009, 0 };
+    cilist io___218 = { 0, 0, 0, fmt_9011, 0 };
+    cilist io___219 = { 0, 0, 0, fmt_9012, 0 };
+    cilist io___220 = { 0, 0, 0, fmt_9013, 0 };
+    cilist io___221 = { 0, 0, 0, fmt_9014, 0 };
+    cilist io___222 = { 0, 0, 0, fmt_9015, 0 };
+    cilist io___223 = { 0, 0, 0, fmt_9018, 0 };
+    cilist io___224 = { 0, 0, 0, fmt_9019, 0 };
+    cilist io___225 = { 0, 0, 0, fmt_3008, 0 };
 
 
 /*     ************ */
@@ -3889,8 +3889,8 @@ L999:
     doublereal d__1, d__2;
 
     /* Local variables */
-    static integer i__;
-    static doublereal gi;
+    integer i__;
+    doublereal gi;
 
 /*     ************ */
 
@@ -3955,9 +3955,9 @@ L999:
 	integer *iprint, integer *info)
 {
     /* Format strings */
-    static char fmt_1001[] = "(/,\002----------------SUBSM entered----------"
+    char fmt_1001[] = "(/,\002----------------SUBSM entered----------"
 	    "-------\002,/)";
-    static char fmt_1004[] = "(/,\002----------------exit SUBSM ------------"
+    char fmt_1004[] = "(/,\002----------------exit SUBSM ------------"
 	    "--------\002,/)";
 
     /* System generated locals */
@@ -3970,23 +3970,23 @@ L999:
 	    , integer *, char *, ftnlen), e_wsle(void);
 
     /* Local variables */
-    static integer i__, j, k, m2;
-    static doublereal dk;
-    static integer js, jy;
-    static doublereal xk;
-    static integer ibd, col2;
-    static doublereal dd_p__, temp1, temp2, alpha;
+    integer i__, j, k, m2;
+    doublereal dk;
+    integer js, jy;
+    doublereal xk;
+    integer ibd, col2;
+    doublereal dd_p__, temp1, temp2, alpha;
     extern /* Subroutine */ int dscal_(integer *, doublereal *, doublereal *, 
 	    integer *), dcopy_(integer *, doublereal *, integer *, doublereal 
 	    *, integer *), dtrsl_(doublereal *, integer *, integer *, 
 	    doublereal *, integer *, integer *);
-    static integer pointr;
+    integer pointr;
 
     /* Fortran I/O blocks */
-    static cilist io___228 = { 0, 6, 0, fmt_1001, 0 };
-    static cilist io___242 = { 0, 6, 0, 0, 0 };
-    static cilist io___243 = { 0, 6, 0, 0, 0 };
-    static cilist io___246 = { 0, 6, 0, fmt_1004, 0 };
+    cilist io___228 = { 0, 6, 0, fmt_1001, 0 };
+    cilist io___242 = { 0, 6, 0, 0, 0 };
+    cilist io___243 = { 0, 6, 0, 0, 0 };
+    cilist io___246 = { 0, 6, 0, fmt_1004, 0 };
 
 
 /*     ********************************************************************** */
@@ -4405,10 +4405,10 @@ L911:
     /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */
-    static doublereal fm, gm, fx, fy, gx, gy, fxm, fym, gxm, gym, stx, sty;
-    static integer stage;
-    static doublereal finit, ginit, width, ftest, gtest, stmin, stmax, width1;
-    static logical brackt;
+    doublereal fm, gm, fx, fy, gx, gy, fxm, fym, gxm, gym, stx, sty;
+    integer stage;
+    doublereal finit, ginit, width, ftest, gtest, stmin, stmax, width1;
+    logical brackt;
     extern /* Subroutine */ int dcstep_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *, logical *, doublereal *,
@@ -4745,7 +4745,7 @@ L1000:
     double sqrt(doublereal);
 
     /* Local variables */
-    static doublereal p, q, r__, s, sgnd, stpc, stpf, stpq, gamma, theta;
+    doublereal p, q, r__, s, sgnd, stpc, stpf, stpq, gamma, theta;
 
 /*     ********** */
 
