@@ -21,9 +21,9 @@ static integer c__1 = 1;
     double sqrt(doublereal);
 
     /* Local variables */
-    static integer j, k;
-    static doublereal s, t;
-    static integer jm1;
+    integer j, k;
+    doublereal s, t;
+    integer jm1;
     extern doublereal ddot_(integer *, doublereal *, integer *, doublereal *, 
 	    integer *);
 
@@ -118,10 +118,10 @@ L40:
     integer t_dim1, t_offset, i__1, i__2;
 
     /* Local variables */
-    static integer j, jj, case__;
+    integer j, jj, case__;
     extern doublereal ddot_(integer *, doublereal *, integer *, doublereal *, 
 	    integer *);
-    static doublereal temp;
+    doublereal temp;
     extern /* Subroutine */ int daxpy_(integer *, doublereal *, doublereal *, 
 	    integer *, doublereal *, integer *);
 

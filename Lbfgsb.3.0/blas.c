@@ -17,8 +17,8 @@ doublereal dnrm2_(integer *n, doublereal *x, integer *incx)
     double sqrt(doublereal);
 
     /* Local variables */
-    static integer i__;
-    static doublereal scale;
+    integer i__;
+    doublereal scale;
 
 /*     ********** */
 
@@ -86,7 +86,7 @@ doublereal dnrm2_(integer *n, doublereal *x, integer *incx)
     integer i__1;
 
     /* Local variables */
-    static integer i__, m, ix, iy, mp1;
+    integer i__, m, ix, iy, mp1;
 
 
 /*     constant times a vector plus a vector. */
@@ -168,7 +168,7 @@ L40:
     integer i__1;
 
     /* Local variables */
-    static integer i__, m, ix, iy, mp1;
+    integer i__, m, ix, iy, mp1;
 
 
 /*     copies a vector, x, to a vector, y. */
@@ -251,8 +251,8 @@ doublereal ddot_(integer *n, doublereal *dx, integer *incx, doublereal *dy,
     doublereal ret_val;
 
     /* Local variables */
-    static integer i__, m, ix, iy, mp1;
-    static doublereal dtemp;
+    integer i__, m, ix, iy, mp1;
+    doublereal dtemp;
 
 
 /*     forms the dot product of two vectors. */
@@ -335,7 +335,7 @@ L60:
     integer i__1, i__2;
 
     /* Local variables */
-    static integer i__, m, mp1, nincx;
+    integer i__, m, mp1, nincx;
 
 
 /*     scales a vector by a constant. */
